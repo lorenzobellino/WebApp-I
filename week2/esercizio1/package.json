@@ -1,7 +1,7 @@
 {
   "name": "esercizio1",
   "version": "1.0.0",
-  "description": "first example: question and answer exercise",
+  "description": "question and answer exercise",
   "main": "QandA.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,8 @@
     "url": "WebApp-I"
   },
   "author": "mazzi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
 }
