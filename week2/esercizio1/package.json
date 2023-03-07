@@ -1,0 +1,15 @@
+{
+  "name": "esercizio1",
+  "version": "1.0.0",
+  "description": "first example: question and answer exercise",
+  "main": "QandA.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "WebApp-I"
+  },
+  "author": "mazzi",
+  "license": "ISC"
+}
