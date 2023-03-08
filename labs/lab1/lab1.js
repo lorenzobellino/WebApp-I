@@ -101,3 +101,5 @@ console.log(myLibrary.toString());
 console.log("Get film with a defined score, sort them by descendig order:\n-------------------------------------------");
 let ratedFilm = myLibrary.getRated();
 console.log(`Rated film:\n${ratedFilm.toString()} `);
+
+// this comment was added in the wsl branch
