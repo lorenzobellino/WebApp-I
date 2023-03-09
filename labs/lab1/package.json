@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lorenzobellino/WebApp-I/issues"
   },
-  "homepage": "https://github.com/lorenzobellino/WebApp-I#readme"
+  "homepage": "https://github.com/lorenzobellino/WebApp-I#readme",
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
 }
