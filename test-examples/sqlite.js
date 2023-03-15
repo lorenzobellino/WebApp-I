@@ -45,15 +45,4 @@ db.run(`insert into exams (id,name,scores) values ('aajs33', 'webapp', 29)`, err
     }
 })
 
-// create table inside db
-// db.exec(`create table if not exists exams 
-//     (   id TEXT primary key,
-//         name TEXT,
-//         score INTEGER
-//         );
-//     insert into exams (id, name, scores)
-//     values  ('AD1234', 'web app', 29),
-//             ('PO1276', 'PDS', 30),
-//             ('QK9833', 'ISS' , 27);
 
-// `)
