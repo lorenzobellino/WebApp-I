@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lorenzobellino/WebApp-I#readme",
   "dependencies": {
+    "dayjs": "^1.11.7",
     "sqlite3": "^5.1.6"
   }
 }
