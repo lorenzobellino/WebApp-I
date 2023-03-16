@@ -51,6 +51,30 @@ function film_library() {
         });
     }
 
+    this.deleteFilm = (id) => {
+        return new Promise((resolve, reject) => {
+            let sql = 'DELETE FROM films WHERE id = ?';
+            db.all(sql, [id], (err) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(id);
+                }
+            });
+        });
+    }
+
+    this.deleteWatchdate = () => {
+        return new Promise((resolve, reject) => {
+            let sql = 'UPDATE films SET watchdate = NULL';
+            db.all(sql, [], (err) => {
+                if (err) {
+                    console.log(err);
+                }
+            });
+        });
+    }
+
     this.getAll = () => {
         return new Promise((resolve, reject) => {
             let sql = 'SELECT * FROM films';
@@ -198,8 +222,10 @@ function printList(films) {
     }
 }
 
-
 let library = new film_library();
+
+/*
+// LAB2 PART 1
 
 library.getAll().then((films) => {
     console.log("-----------------------All films------------------------------");
@@ -232,5 +258,30 @@ let word = "the";
 library.searchWord(word).then((films) => {
     console.log(`--------------------------Films with title containing : "${word}"------------------------`);
     printList(films);
+});
+
+*/
+// LAB2 PART 2
+
+let film8 = new film(13, "Everything, everywhere, all at once", 1, 5, dayjs("2023-02-15"));
+
+library.addFilm(film8).then((id) => {
+    console.log("Added film with id: " + id);
+}).catch((err) => {
+    console.log(err);
+});
+
+
+library.deleteFilm(6).then((id) => {
+    console.log("Deleted film with id: " + id);
+}
+).catch((err) => {
+    console.log(err);
+});
+
+library.deleteWatchdate().then(() => {
+    console.log("Deleted all watchdates");
+}).catch((err) => {
+    console.log(err);
 });
 
