@@ -224,9 +224,9 @@ function printList(films) {
 
 let library = new film_library();
 
-/*
+loadLibrary();
 // LAB2 PART 1
-
+/*
 library.getAll().then((films) => {
     console.log("-----------------------All films------------------------------");
     printList(films);
@@ -259,10 +259,10 @@ library.searchWord(word).then((films) => {
     console.log(`--------------------------Films with title containing : "${word}"------------------------`);
     printList(films);
 });
-
 */
-// LAB2 PART 2
 
+// LAB2 PART 2
+/*
 let film8 = new film(13, "Everything, everywhere, all at once", 1, 5, dayjs("2023-02-15"));
 
 library.addFilm(film8).then((id) => {
@@ -284,4 +284,4 @@ library.deleteWatchdate().then(() => {
 }).catch((err) => {
     console.log(err);
 });
-
+*/
